@@ -1,0 +1,42 @@
+
+ACE v2.3 
+
+  instance
+    name:main
+
+  Loading variables...
+
+  Loading constraints...
+
+  domains
+    types:1  values:729  sizes:[9:81]
+  variables
+    count:81  arrays:1  degrees:[3:59,4:22]
+  constraints
+    count:49  specific:49  arities:[1:22,9:27]
+    distribution:[AllDifferentComplete:27,Extension1:22]
+    wck:0.11  cpu:0.421  mem:39M595
+
+  Building solver... 
+
+  solver
+    guaranteedAC:true
+    wck:0.13  cpu:0.437  mem:42M601
+
+  preprocessing
+    effs:64  values:370  unsat:true
+    wck:0.004  cpu:0.437  mem:42M601
+
+
+  global
+    effs:64
+    stop:FULL_EXPLORATION
+    wck:0.14  cpu:0.437  mem:42M601
+
+s UNSATISFIABLE
+
+d WRONG DECISIONS 0
+d FOUND SOLUTIONS 0
+d COMPLETE EXPLORATION
+
+c real time : 0.453

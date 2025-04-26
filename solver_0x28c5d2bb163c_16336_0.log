@@ -1,0 +1,61 @@
+
+ACE v2.3 
+
+  instance
+    name:main
+
+  Loading variables...
+
+  Loading constraints...
+
+  domains
+    types:1  values:729  sizes:[9:81]
+  variables
+    count:81  arrays:1  degrees:[3:60,4:21]
+  constraints
+    count:48  specific:48  arities:[1:21,9:27]
+    distribution:[AllDifferentComplete:27,Extension1:21]
+    wck:0.12  cpu:0.39  mem:40M602
+
+  Building solver... 
+
+  solver
+    guaranteedAC:true
+    wck:0.13  cpu:0.39  mem:43M609
+
+  preprocessing
+    effs:84  values:275  removedByAC:454  unsat:false
+    wck:0.004  cpu:0.406  mem:43M609
+
+    run1  dpts:2..80  effs:264  fails:6  wrgs:6  wck:0.00  ngds:6  sols:1
+
+  global
+    effs:264  ngds:6
+    stop:REACHED_GOAL  wrgs:6  sols:1  sol1Cpu:0.406
+    wck:0.14  cpu:0.406  mem:43M609
+
+
+  Solution 1 in JSON format:
+   {
+    grid_vars: [
+     [8, 1, 2, 7, 5, 3, 6, 4, 9],
+     [9, 4, 3, 6, 8, 2, 1, 7, 5],
+     [6, 7, 5, 4, 9, 1, 2, 8, 3],
+     [1, 5, 4, 2, 3, 7, 8, 9, 6],
+     [3, 6, 9, 8, 4, 5, 7, 2, 1],
+     [2, 8, 7, 1, 6, 9, 5, 3, 4],
+     [5, 2, 1, 9, 7, 4, 3, 6, 8],
+     [4, 3, 8, 5, 2, 6, 9, 1, 7],
+     [7, 9, 6, 3, 1, 8, 4, 5, 2]
+    ]
+   }
+
+s SATISFIABLE
+
+v <instantiation id='sol1' type='solution'> <list> grid_vars[][] </list> <values> 8 1 2 7 5 3 6 4 9 9 4 3 6 8 2 1 7 5 6 7 5 4 9 1 2 8 3 1 5 4 2 3 7 8 9 6 3 6 9 8 4 5 7 2 1 2 8 7 1 6 9 5 3 4 5 2 1 9 7 4 3 6 8 4 3 8 5 2 6 9 1 7 7 9 6 3 1 8 4 5 2 </values> </instantiation>
+
+d WRONG DECISIONS 6
+d FOUND SOLUTIONS 1
+d INCOMPLETE EXPLORATION
+
+c real time : 0.406

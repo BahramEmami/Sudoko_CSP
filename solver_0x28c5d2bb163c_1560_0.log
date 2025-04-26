@@ -1,0 +1,61 @@
+
+ACE v2.3 
+
+  instance
+    name:main
+
+  Loading variables...
+
+  Loading constraints...
+
+  domains
+    types:1  values:729  sizes:[9:81]
+  variables
+    count:81  arrays:1  degrees:[3:55,4:26]
+  constraints
+    count:53  specific:53  arities:[1:26,9:27]
+    distribution:[AllDifferentComplete:27,Extension1:26]
+    wck:0.12  cpu:0.437  mem:39M604
+
+  Building solver... 
+
+  solver
+    guaranteedAC:true
+    wck:0.14  cpu:0.453  mem:42M611
+
+  preprocessing
+    effs:155  values:81  removedByAC:648  unsat:false
+    wck:0.004  cpu:0.453  mem:42M611
+
+    run1  dpts:-1..80  effs:155  wck:0.00  sols:1
+
+  global
+    effs:155
+    stop:REACHED_GOAL  sols:1  sol1Cpu:0.453
+    wck:0.14  cpu:0.453  mem:43M618
+
+
+  Solution 1 in JSON format:
+   {
+    x: [
+     [6, 8, 4, 1, 5, 9, 7, 3, 2],
+     [7, 5, 1, 8, 3, 2, 9, 4, 6],
+     [9, 2, 3, 6, 7, 4, 1, 8, 5],
+     [1, 9, 2, 3, 6, 5, 8, 7, 4],
+     [8, 4, 5, 2, 1, 7, 6, 9, 3],
+     [3, 6, 7, 4, 9, 8, 2, 5, 1],
+     [2, 3, 9, 7, 4, 6, 5, 1, 8],
+     [5, 1, 6, 9, 8, 3, 4, 2, 7],
+     [4, 7, 8, 5, 2, 1, 3, 6, 9]
+    ]
+   }
+
+s SATISFIABLE
+
+v <instantiation id='sol1' type='solution'> <list> x[][] </list> <values> 6 8 4 1 5 9 7 3 2 7 5 1 8 3 2 9 4 6 9 2 3 6 7 4 1 8 5 1 9 2 3 6 5 8 7 4 8 4 5 2 1 7 6 9 3 3 6 7 4 9 8 2 5 1 2 3 9 7 4 6 5 1 8 5 1 6 9 8 3 4 2 7 4 7 8 5 2 1 3 6 9 </values> </instantiation>
+
+d WRONG DECISIONS 0
+d FOUND SOLUTIONS 1
+d INCOMPLETE EXPLORATION
+
+c real time : 0.468
